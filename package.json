@@ -1,0 +1,14 @@
+{
+  "name": "hope-demo",
+  "license": "MIT",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "next",
+    "vuepress-theme-hope": "next"
+  }
+}
