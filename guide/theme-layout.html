@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-beta.49" />
+    <meta name="theme" content="VuePress Theme Hope" />
+    <meta property="og:url" content="https://vuepress-theme-hope-v2-demo.netlify.app/hope-demo/guide/theme-layout.html"><meta property="og:site_name" content="Theme Demo"><meta property="og:title" content="Layout"><meta property="og:type" content="article"><meta property="og:updated_time" content="2022-07-17T08:14:59.000Z"><meta property="og:locale" content="en-US"><meta property="article:modified_time" content="2022-07-17T08:14:59.000Z"><link rel="stylesheet" href="/hope-demo/iconfont/iconfont.css"><title>Layout | Theme Demo</title><meta name="description" content="A demo for vuepress-theme-hope">
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #1d2025;
+      }
+
+      html,
+      body {
+        background-color: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.querySelector("html").setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="stylesheet" href="/hope-demo/assets/style.270c628a.css">
+    <link rel="modulepreload" href="/hope-demo/assets/app.8cef77d0.js"><link rel="modulepreload" href="/hope-demo/assets/theme-layout.html.07205c10.js"><link rel="modulepreload" href="/hope-demo/assets/plugin-vue_export-helper.21dcd24c.js"><link rel="modulepreload" href="/hope-demo/assets/theme-layout.html.1fbb54f5.js"><link rel="prefetch" href="/hope-demo/assets/index.html.8c33b54e.js"><link rel="prefetch" href="/hope-demo/assets/index.html.55e26772.js"><link rel="prefetch" href="/hope-demo/assets/app-configs.html.a6b894d9.js"><link rel="prefetch" href="/hope-demo/assets/frontmatter-configs.html.d96ac527.js"><link rel="prefetch" href="/hope-demo/assets/introduction.html.bcae6d11.js"><link rel="prefetch" href="/hope-demo/assets/theme-configs.html.736b1897.js"><link rel="prefetch" href="/hope-demo/assets/index.html.cea1e409.js"><link rel="prefetch" href="/hope-demo/assets/api.html.8b6425c6.js"><link rel="prefetch" href="/hope-demo/assets/asset-handling.html.3356389f.js"><link rel="prefetch" href="/hope-demo/assets/configuration.html.1da5d7c8.js"><link rel="prefetch" href="/hope-demo/assets/deploying.html.2721fbd6.js"><link rel="prefetch" href="/hope-demo/assets/frontmatter.html.eddd2390.js"><link rel="prefetch" href="/hope-demo/assets/getting-started.html.97822953.js"><link rel="prefetch" href="/hope-demo/assets/guide1.html.1da84bb2.js"><link rel="prefetch" href="/hope-demo/assets/header.html.4a69215f.js"><link rel="prefetch" href="/hope-demo/assets/markdown.html.12bfc84c.js"><link rel="prefetch" href="/hope-demo/assets/migration-from-vitepress-0.html.328c3229.js"><link rel="prefetch" href="/hope-demo/assets/migration-from-vuepress.html.be2c1e58.js"><link rel="prefetch" href="/hope-demo/assets/theme-carbon-ads.html.c36ce771.js"><link rel="prefetch" href="/hope-demo/assets/theme-edit-link.html.ab000ff5.js"><link rel="prefetch" href="/hope-demo/assets/theme-footer.html.45789022.js"><link rel="prefetch" href="/hope-demo/assets/theme-home-page.html.394405e1.js"><link rel="prefetch" href="/hope-demo/assets/theme-introduction.html.f851e626.js"><link rel="prefetch" href="/hope-demo/assets/theme-last-updated.html.b42ac11a.js"><link rel="prefetch" href="/hope-demo/assets/theme-nav.html.dc97cbf0.js"><link rel="prefetch" href="/hope-demo/assets/theme-prev-next-link.html.80c5af43.js"><link rel="prefetch" href="/hope-demo/assets/theme-search.html.e65c733e.js"><link rel="prefetch" href="/hope-demo/assets/theme-sidebar.html.18b2ca1c.js"><link rel="prefetch" href="/hope-demo/assets/what-is-vitepress.html.9c69087c.js"><link rel="prefetch" href="/hope-demo/assets/index.html.923b8175.js"><link rel="prefetch" href="/hope-demo/assets/as-plugins.html.fc9b7c7c.js"><link rel="prefetch" href="/hope-demo/assets/faqs.html.0f16b4dd.js"><link rel="prefetch" href="/hope-demo/assets/gradle-conf.html.35b0eef6.js"><link rel="prefetch" href="/hope-demo/assets/migrate-to-androidx.html.90f1f36e.js"><link rel="prefetch" href="/hope-demo/assets/sites.html.c445bffa.js"><link rel="prefetch" href="/hope-demo/assets/software.html.c8408d90.js"><link rel="prefetch" href="/hope-demo/assets/tips.html.2b6fa24d.js"><link rel="prefetch" href="/hope-demo/assets/404.html.1b69f783.js"><link rel="prefetch" href="/hope-demo/assets/index.html.d6d4c51b.js"><link rel="prefetch" href="/hope-demo/assets/index.html.6e74cbb2.js"><link rel="prefetch" href="/hope-demo/assets/app-configs.html.1d4161d5.js"><link rel="prefetch" href="/hope-demo/assets/frontmatter-configs.html.6fdf1db5.js"><link rel="prefetch" href="/hope-demo/assets/introduction.html.8bde8c1c.js"><link rel="prefetch" href="/hope-demo/assets/theme-configs.html.c06030ec.js"><link rel="prefetch" href="/hope-demo/assets/index.html.e26c65f0.js"><link rel="prefetch" href="/hope-demo/assets/api.html.331b5769.js"><link rel="prefetch" href="/hope-demo/assets/asset-handling.html.98a0cc59.js"><link rel="prefetch" href="/hope-demo/assets/configuration.html.87e9b3f0.js"><link rel="prefetch" href="/hope-demo/assets/deploying.html.0c26ba14.js"><link rel="prefetch" href="/hope-demo/assets/frontmatter.html.8331d5e4.js"><link rel="prefetch" href="/hope-demo/assets/getting-started.html.82bc9516.js"><link rel="prefetch" href="/hope-demo/assets/guide1.html.fedb0d2c.js"><link rel="prefetch" href="/hope-demo/assets/header.html.28db0f1f.js"><link rel="prefetch" href="/hope-demo/assets/markdown.html.0bf88294.js"><link rel="prefetch" href="/hope-demo/assets/migration-from-vitepress-0.html.4d30a401.js"><link rel="prefetch" href="/hope-demo/assets/migration-from-vuepress.html.b16ed549.js"><link rel="prefetch" href="/hope-demo/assets/theme-carbon-ads.html.32a15324.js"><link rel="prefetch" href="/hope-demo/assets/theme-edit-link.html.655a7476.js"><link rel="prefetch" href="/hope-demo/assets/theme-footer.html.19c6eee9.js"><link rel="prefetch" href="/hope-demo/assets/theme-home-page.html.c484cd57.js"><link rel="prefetch" href="/hope-demo/assets/theme-introduction.html.f9f247c8.js"><link rel="prefetch" href="/hope-demo/assets/theme-last-updated.html.d2924ca5.js"><link rel="prefetch" href="/hope-demo/assets/theme-nav.html.eec8f5a3.js"><link rel="prefetch" href="/hope-demo/assets/theme-prev-next-link.html.4c39c726.js"><link rel="prefetch" href="/hope-demo/assets/theme-search.html.9340fd54.js"><link rel="prefetch" href="/hope-demo/assets/theme-sidebar.html.875221b6.js"><link rel="prefetch" href="/hope-demo/assets/what-is-vitepress.html.e20081bf.js"><link rel="prefetch" href="/hope-demo/assets/index.html.78188fc6.js"><link rel="prefetch" href="/hope-demo/assets/as-plugins.html.9768fc8a.js"><link rel="prefetch" href="/hope-demo/assets/faqs.html.f655bea7.js"><link rel="prefetch" href="/hope-demo/assets/gradle-conf.html.d9a4c423.js"><link rel="prefetch" href="/hope-demo/assets/migrate-to-androidx.html.95d9b6bb.js"><link rel="prefetch" href="/hope-demo/assets/sites.html.84c7e312.js"><link rel="prefetch" href="/hope-demo/assets/software.html.c8d730be.js"><link rel="prefetch" href="/hope-demo/assets/tips.html.13787792.js"><link rel="prefetch" href="/hope-demo/assets/404.html.4b9734c5.js"><link rel="prefetch" href="/hope-demo/assets/404.a486bdcb.js"><link rel="prefetch" href="/hope-demo/assets/Layout.5174d10a.js"><link rel="prefetch" href="/hope-demo/assets/photoswipe.esm.092fbc15.js">
+  </head>
+  <body>
+    <div id="app"><!--[--><doc></doc><!----><!--]--></div>
+    <script type="module" src="/hope-demo/assets/app.8cef77d0.js" defer></script>
+  </body>
+</html>
