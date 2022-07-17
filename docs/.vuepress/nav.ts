@@ -6,10 +6,17 @@ export default navbar([
     icon: "Adobe-Photoshop",
     activeMatch: "^/guide/",
     link: "/guide/",
-  }, {
+  },
+  {
     text: "tips",
     icon: "vue",
     activeMatch: "^/tips/",
     link: "/tips/",
+  },
+  {
+    text: "config",
+    icon: "makefile",
+    activeMatch: "^/config/",
+    link: "/config/",
   },
 ]);
