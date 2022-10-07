@@ -1,28 +1,27 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import navbar from "./nav";
-import sidebar from "./sidebar";
+import { hopeTheme } from 'vuepress-theme-hope'
+import navbar from './nav'
+import sidebar from './sidebar'
 
-const hostname =
-  process.env.HOSTNAME || "https://vuepress-theme-hope-v2-demo.netlify.app";
+const hostname = process.env.HOSTNAME || 'https://vuepress-theme-hope-v2-demo.netlify.app'
 
 export default hopeTheme({
   hostname,
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: 'Mr.Hope',
+    url: 'https://mrhope.site',
   },
 
-  iconPrefix: "iconfont icon-",
+  iconPrefix: 'iconfont icon-',
 
-  logo: "/logo.svg",
+  logo: '/logo.svg',
 
-  repo: "yzqbugs/hope-demo",
+  repo: 'yzqbugs/hope-demo',
 
-  docsDir: "docs",
+  docsDir: 'docs',
 
   locales: {
-    "/": {
+    '/': {
       // navbar
       navbar: navbar,
 
@@ -30,4 +29,4 @@ export default hopeTheme({
       sidebar: sidebar,
     },
   },
-});
+})

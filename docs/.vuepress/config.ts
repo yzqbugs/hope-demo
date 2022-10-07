@@ -1,30 +1,30 @@
-import { defineUserConfig } from "vuepress";
-import theme from "./theme";
+import { defineUserConfig } from 'vuepress'
+import theme from './theme'
 
-const base = (process.env.BASE as "/" | `/${string}/`) || "/";
+const base = (process.env.BASE as '/' | `/${string}/`) || '/'
 
 export default defineUserConfig({
-  base: "/hope-demo/",
+  base: '/hope-demo/',
 
-  dest: "./dist",
- 
+  dest: './dist',
+
   head: [
     [
-      "link",
+      'link',
       {
-        rel: "stylesheet",
-        href: "/hope-demo/iconfont/iconfont.css",
+        rel: 'stylesheet',
+        href: '/hope-demo/iconfont/iconfont.css',
       },
     ],
   ],
 
   locales: {
-    "/": {
-      lang: "en-US",
-      title: "Theme Demo",
-      description: "A demo for vuepress-theme-hope",
+    '/': {
+      lang: 'en-US',
+      title: 'Theme Demo',
+      description: 'A demo for vuepress-theme-hope',
     },
   },
 
   theme,
-});
+})
