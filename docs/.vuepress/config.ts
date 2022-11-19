@@ -1,6 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import theme from './theme'
-
+import {searchProPlugin} from 'vuepress-plugin-search-pro'
 const base = (process.env.BASE as '/' | `/${string}/`) || '/'
 
 export default defineUserConfig({
@@ -27,4 +27,9 @@ export default defineUserConfig({
   },
 
   theme,
+  plugins:[
+    searchProPlugin({
+      indexContent:true
+    })
+  ]
 })
