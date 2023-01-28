@@ -1,0 +1,1 @@
+import{_ as t,W as a,X as c,Y as e,Z as n}from"./framework-0d6dbdc9.js";const r={},s=e("h1",{id:"配置",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#配置","aria-hidden":"true"},"#"),n(" 配置")],-1),o=[s];function _(d,i){return a(),c("div",null,o)}const l=t(r,[["render",_],["__file","index.html.vue"]]);export{l as default};
