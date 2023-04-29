@@ -1,0 +1,1 @@
+import{_ as t,Y as s,Z as a,$ as e,a0 as n}from"./framework-9a6634be.js";const c={},o=e("h1",{id:"安卓tips",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#安卓tips","aria-hidden":"true"},"#"),n(" 安卓tips")],-1),r=e("p",null,"一些小技巧",-1),_=[o,r];function i(d,l){return s(),a("div",null,_)}const f=t(c,[["render",i],["__file","index.html.vue"]]);export{f as default};
